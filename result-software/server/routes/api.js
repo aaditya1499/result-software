@@ -37,7 +37,7 @@ router.post('/updateStudent', (req, res)=>{
     let query = "UPDATE QUERY"
     if(enrollno == null){
         res.status(400).send("Bad Request");
-        console.error('Bad HTTP request send enroll no. in query')
+        console.error('undesired HTTP request send enroll no. in query')
     }
     else{
         config.connect();
